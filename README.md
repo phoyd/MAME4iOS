@@ -79,7 +79,20 @@ Even if you are not in the paid Apple Developer Program, you can sideload the ap
         1. `Xcode` → `Preferences` add your Apple ID, select your Personal Team, and create an iOS Development Profile.
         2. Select the project name on the left pane and make sure your personal team is selected
         3. Hit the `▶︎` Run button to install on your device. _Done._
-        
+
+#### IPA Sideloading with AltStore
+
+Creating an IPA requires an enrolled and paid for developer account. An IPA for sideloading with AltStore however can be created manually from a Xcode project archive. 
+
+1. In the XCode menu bar select `Product|Archive`. The archive will be built and the organizer window (`Window|Organizer|Archives`) will show up with the "Archives" tab open. Right click the archive file you've build and select `Show in Finder`.
+2. The archive is a bundle named like `MAME4iOS Release <date and time>.xcarchive`. Right click and `Show package contents` to enter it. Find the `Applications` folder inside `Products` and rename it to `Payload`.
+3. Right click Payload and select `Compress "Payload"`.
+4. Rename the resulting `Payload.zip` to `MAME4iOS.ipa`
+
+The resulting ipa can be transferred to your devices and installed with AltStore. Alternatively, the machine running the AltStore server can do this: 
+
+6. **Option**+Click the AltStore icon the menu bar and select `Sideload .ipa`. (This is only visible when you hold the Option key).
+
 ## How to build latest version of `MAME` (optional)
 
 By default `MAME4iOS` will use pre-combiled libraries for the latest MAME, if you need a Simulator build, or just want to build `MAME`, you need to...
