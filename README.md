@@ -89,9 +89,9 @@ Creating an IPA requires an enrolled and paid for developer account. An IPA for 
 3. Right click Payload and select `Compress "Payload"`.
 4. Rename the resulting `Payload.zip` to `MAME4iOS.ipa`
 
-The resulting ipa can be transferred to your devices and installed with AltStore. Alternatively, the machine running the AltStore server can do this: 
+The resulting ipa can be transferred to your devices and installed with AltStore. Alternatively, the machine running the AltServer can do this. 
 
-6. **Option**+Click the AltStore icon the menu bar and select `Sideload .ipa`. (This is only visible when you hold the Option key).
+6. **Option**+Click the AltServer icon the menu bar and select `Sideload .ipa`. (This is only visible when you hold the Option key).
 
 ## How to build latest version of `MAME` (optional)
 
